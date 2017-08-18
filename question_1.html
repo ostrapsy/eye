@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!-- based on https://codepen.io/khadkamhn/pen/qbPQrv -->
+<html>
+<head>
+<link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900'>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+
+<body>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.3.1/rangeslider.min.js'></script>
+<div class="budget-wrap">
+	<div class="budget">
+		<div class="header">
+			<div class="title clearfix">It is good with a multicultural Sweden.</div>
+		</div>
+		<div class="content">
+			<input type="range" min="1" max="100" value="20"
+            data-rangeslider id="response">
+            <div class="range-lbl">
+                <span class="label left">Disagree</span>
+                <span class="title">Your Preference</span>
+                <span class="label right">Agree</span>
+            </div>
+		</div>
+		<div class="content">
+			<input type="range" min="1" max="100" value="25" data-rangeslider disabled>
+            <div class="range-lbl">
+                <span class="label left">Disagree</span>
+                <span class="title">Group's Average Preference</span>
+                <span class="label right">Agree</span>
+            </div>
+		</div>
+		<div class="footer clearfix">
+			<div class="pull-right">
+				<a class="btn btn-pri">Next</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+$(function(){
+	$('input[type="range"]').rangeslider({
+		polyfill:false
+	});
+});
+
+function submitSetting() {
+    // submit response to server
+    $.post( "logResponse.php", { subject: 1, question: 3, randVal: 40, response: $("#response").val() } );
+    // navigate to next page
+    window.location="next.html";
+};
+
+// attach function to button
+$('.btn.btn-pri').click(function(){
+    submitSetting();
+})
+</script>
+
+</body>
+
+</html>
