@@ -156,7 +156,7 @@ body{
 }
 .budget-wrap .content .range-lbl .label{
 	padding-top:10px;
-	padding-bottom:5px;
+	padding-bottom:10px;
     width: 25%;
     font-size:x-small;
 }
@@ -168,6 +168,6 @@ body{
 }
 .budget-wrap .content .range-lbl .title{
 	padding-top:10px;
-	padding-bottom:5px;
+	padding-bottom:10px;
     text-align: center;
 }
