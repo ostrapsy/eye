@@ -108,7 +108,8 @@ body{
 	box-shadow:0 25px 55px 0 rgba(0,0,0,.21),0 16px 28px 0 rgba(0,0,0,.22);
 }
 .budget-wrap .header .title{
-	color:#fff;
+	/*color:#fff;*/
+	color:#000000;
 	font-size:18px;
 }
 
