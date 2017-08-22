@@ -126,6 +126,7 @@ body{
 .budget-wrap .content .range-lbl{
     color:#000000;
     /*color:#ddd;*/
+    padding-top:20px;
     display:flex;
     justify-content: space-between;
     align-items: flex-start;
