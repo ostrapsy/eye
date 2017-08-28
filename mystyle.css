@@ -137,8 +137,8 @@ body{
 }
 
 .budget-wrap .footer{
-	margin-top:30px;
-	padding-top:30px;
+	/*margin-top:30px;
+	padding-top:30px;*/
 	/*margin-top:30px;*/
 }
 .budget-wrap .footer .btn{
@@ -169,6 +169,6 @@ body{
 }
 .budget-wrap .content .range-lbl .title{
 	padding-top:10px;
-	padding-bottom:10px;
+	padding-bottom:30px;
     text-align: center;
 }
