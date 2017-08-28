@@ -8,7 +8,8 @@ html{
 body{
 	margin:0;
 	color:#fdfdd1;
-	padding:50px 150px;
+	/*padding:50px 150px;*/
+	padding:150px 150px 50px;
 	font:300 18px/18px Roboto, sans-serif;
 }
 *,:after,:before{box-sizing:border-box}
@@ -108,7 +109,6 @@ body{
 /* Budget */
 .budget-wrap{
 	padding:40px;
-	padding-top:50px;
 	/*background:#292942;*/
 	/*background:#ffffe8;*/
 	/*background:#e8e8da;*/
